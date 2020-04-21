@@ -19,15 +19,15 @@ namespace FizzBuzz
         /// <param name="Play"></param>
         static void FizzBuzz(int Max, int[] Multiples ,bool Play)
         {
-            int remainderOne = Multiples[0];
-            int remainderTwo = Multiples[1];
+            int multiOne = Multiples[0];
+            int multiTwo = Multiples[1];
 
             if (Play == false)
             {
                 for (int x = 1; x < Max + 1; x++)
                 {
-                    remainderOne = x % 3;
-                    remainderTwo = x % 5;
+                   int remainderOne = x % multiOne;
+                   int remainderTwo = x % multiTwo;
 
                     if(remainderOne == 0 && remainderTwo == 0) //<- check this first
                     {
